@@ -6,11 +6,48 @@
   gap: 16px;
   width: 300px;
   height: 240px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   display: flex;
   background-color: white;
+  flex-direction: column;
+  margin: auto;
+  text-align: center
 }
+
+.AirlineCard:hover {
+  border: 1px solid #363f45;
+}
+
+.AirlineCard-extra {
+  display: none;
+}
+
+.AirlineCard:hover .AirlineCard-extra {
+  display: inline-block;
+}
+
+.AirlineCard-alliance {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #192024;
+}
+
+.AirlineCard-phone {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #192024;
+}
+
+.AirlineCard-site {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color:#5a6872
+}
+
 
 .AirlineCard-info {
   display: flex;
@@ -20,10 +57,12 @@
   font-size: 16px;
   font-weight: bold;
   color: #192024;
+  /* flex-wrap: wrap; */
 }
 
 .AirlineCard-name {
   padding-left: 18px;
+  flex-wrap: wrap;
 }
 
 .AirlineCard-logo {

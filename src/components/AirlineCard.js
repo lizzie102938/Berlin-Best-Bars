@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './AirlineCard.css';
-// import './CardCollection';
-// const AIRLINE_API = "kayak.com/rimg/provider-logos/airlines/v/";
+import './CardCollection';
 
 class AirlineCard extends Component {
   render() {
@@ -11,9 +10,13 @@ class AirlineCard extends Component {
           <img className="AirlineCard-logo" src={this.props.logoURL} alt={this.props.name}/>
           <h3 className="AirlineCard-name">{this.props.name}</h3>
         </div>
+        <p className="AirlineCard-extra AirlineCard-alliance">{this.props.alliance}</p>
+        <p className="AirlineCard-extra AirlineCard-phone">{this.props.phone}</p>
+        <p className="AirlineCard-extra AirlineCard-site">{this.props.site}</p>
       </div>
     );
   }
 }
+
 
 export default AirlineCard;
