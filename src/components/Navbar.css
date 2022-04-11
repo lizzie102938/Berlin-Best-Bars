@@ -1,0 +1,12 @@
+
+.Navbar-logo {
+  height: 19px;
+  padding-left: 16px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.Navbar {
+  background-color: white;
+  border-bottom: solid 1.5px rgba(197, 199, 199, 0.5);
+}

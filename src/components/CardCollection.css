@@ -1,0 +1,11 @@
+.CardCollection {
+  background-color: #F9FAFB;
+}
+
+.CardCollection-cards {
+  display: flex;
+  /* justify-content: center; */
+  gap: 16px;
+  flex-wrap: wrap;
+  flex: 0 1 24%
+}
