@@ -60,14 +60,18 @@
 }
 
 .AirlineCard:hover .AirlineCard-extra {
-  display: flex;
+  display: block;
   flex-direction: column;
-  line-height: 0;
+  line-height: 0.4;
 }
 
 .AirlineCard:hover {
   border: 1px solid #363f45;
   box-sizing: border-box;
+}
+
+.AirlineCard:hover .AirlineCard-name {
+  font-size: 14px;
 }
 
 

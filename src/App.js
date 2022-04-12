@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import CardCollection from './components/CardCollection';
 import Navbar from './components/Navbar';
 import Filter from './components/Filter';
+import TravelCards from './components/TravelCards'
 // import { data } from './Data';
 
 class App extends Component {
@@ -17,7 +18,8 @@ class App extends Component {
         <h1 className="App-title">Airlines</h1>
         <Filter />
         <CardCollection />
-        </div>
+        <TravelCards />
+      </div>
     </div>
   );
   }
