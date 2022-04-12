@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+Kayak single page application using React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Data:
 
-## Available Scripts
+I couldn't manage to fetch data from the API they gave me, so I decided to just
+manually input it. I don't know if they expected me to fetch it from the API or
+if the manual approach is ok. They confirmed with me I only needed to include the
+12 cards shown, so decided doing it manually was better than nothing.
 
-In the project directory, you can run:
+I initially created the data in ./components/CardCollection.js. I have also now
+copied the same data into Data.js. I probably don't need it in two places, but
+it was just part of me playing around with getting the filter implemented.
 
-### `npm start`
+Filter:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I have created the checkboxes I need for the filter functionality, but cannot
+get my head around how to connect the data. I have tried a few different approaches
+but keep getting stuck.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tests:
 
-### `npm test`
+Do you think they'll expect me to add a couple of tests? I plan on adding at least
+a couple, but haven't done testing in React before so will have to work it out.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Styling:
 
-### `npm run build`
+Mostly done now, just need to work out how to add 10px between the checkbox and
+label. Tried a few things, but didn't work. Not to worried if I can't work this
+out though!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+File organisation:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I have included component.js files and their respective css files in the
+"components" folder. Should I put the css files elsewhere?

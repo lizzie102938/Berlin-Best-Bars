@@ -7,11 +7,9 @@ import Filter from './components/Filter';
 
 class App extends Component {
   render() {
-
   // const generateAlliancesForFilter = () => {
   //   return [...new Set(data.map((airline) => airline.alliance))]
   // }
-
   return (
     <div className="App">
       <Navbar />
