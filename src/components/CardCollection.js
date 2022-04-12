@@ -7,6 +7,9 @@ import "./CardCollection.css"
 // I chose to extract data manually from the API as there were only 12 examples
 // and on this occasion it seemed more efficient. For a larger extraction of data
 // I would have used Axios.
+// const generateAlliancesForFilter = () => {
+//   return [...new Set(data.map((a) => a.alliance))]
+// }
 
 class CardCollection extends Component {
   static defaultProps = {
@@ -94,10 +97,6 @@ class CardCollection extends Component {
       },
     ]
   };
-
-  // const generateAlliancesForFilter = () => {
-  //   return [...new Set(data.map((a) => a.alliance))]
-  // }
 
   render() {
     return (

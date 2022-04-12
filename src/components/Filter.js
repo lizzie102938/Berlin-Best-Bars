@@ -1,12 +1,8 @@
 import { Component } from 'react';
 import './Filter.css';
-// import CardCollection from './CardCollection';
 
 class Filter extends Component {
   render() {
-
-    console.log(alliances.name);
-
     return (
       <div>
         <h3 className='Filter-title'>Filter by Alliances</h3>
@@ -14,18 +10,18 @@ class Filter extends Component {
 
           <div className='Filter-oneworld'>
             <input type="checkbox" id="oneworld"/>
-            <label for="oneworld" className="Filter-box">{alliances[0]}</label>
+            <label for="oneworld" className="Filter-box">Oneworld</label>
           </div>
 
 
           <div className='Filter-skyteam'>
             <input type="checkbox" id="skyteam"/>
-            <label for="skyteam" className="Filter-box">{alliances[1]}</label>
+            <label for="skyteam" className="Filter-box">Skyteam</label>
           </div>
 
           <div className='Filter-staralliance'>
             <input type="checkbox" id="staralliance"/>
-            <label for="staralliance" className="Filter-box">{alliances[2]}</label>
+            <label for="staralliance" className="Filter-box">Star Alliance</label>
           </div>
 
         </div>
@@ -33,8 +29,6 @@ class Filter extends Component {
     )
   }
 }
-
-const alliances = ["Oneworld", "Star Alliance", "Sky Team"];
 
 export default Filter;
 
