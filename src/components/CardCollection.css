@@ -7,5 +7,9 @@
   /* justify-content: center; */
   gap: 16px;
   flex-wrap: wrap;
-  flex: 0 1 24%
+  /* flex: 0 1 24%; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  justify-content: center;
+  align-items: center;
+
 }
