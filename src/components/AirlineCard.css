@@ -4,36 +4,30 @@
   gap: 16px;
   width: 300px;
   height: 240px;
+  background-color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.AirlineCard-logo-name-extra {
+  justify-content: center;
   display: flex;
-  background-color: white;
-  flex-direction: column;
-  text-align: center;
-  line-height: none;
-  position: relative;
+  /* flex-direction: row; */
+  align-items: center;
 }
 
-.AirlineCard-info-and-extra {
-
+.AirlineCard-logo {
+  height: 32px;
+  padding-right: 18px;
 }
 
-.AirlineCard p {
-  margin: 0;
-  word-break: break-word;
-}
-
-.AirlineCard:hover {
-  border: 1px solid #363f45;
-  box-sizing: border-box;
-}
-
-.AirlineCard-extra {
-  display: none;
-}
-
-.AirlineCard:hover .AirlineCard-extra {
-  display: inline-block;
+.AirlineCard-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #192024;
+  line-height: normal;
 }
 
 .AirlineCard-alliance {
@@ -57,8 +51,72 @@
   color:#5a6872;
 }
 
+.AirlineCard-logo-name-extra {
+  display: flex;
+}
 
-.AirlineCard-info {
+.AirlineCard-extra {
+  display: none;
+}
+
+.AirlineCard:hover .AirlineCard-extra {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+}
+
+.AirlineCard:hover {
+  border: 1px solid #363f45;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* .AirlineCard-extra {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .AirlineCard-name-and-extra {
+  flex-direction: column;
+  display: flex;
+}
+
+/* .AirlineCard-info-and-extra {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  flex-direction: column;
+  display: flex;
+} */
+
+/* .AirlineCard p {
+  margin: 0;
+  word-break: break-word;
+}
+
+
+
+
+.AirlineCard:hover .AirlineCard-extra {
+  display: inline-block;
+}
+
+.AirlineCard-alliance {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #192024;
+}
+
+
+/* .AirlineCard-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,13 +124,8 @@
   font-size: 16px;
   font-weight: bold;
   color: #192024;
-}
+} */
 
-.AirlineCard-name {
-  padding-left: 18px;
+/* .AirlineCard-name {
   flex-wrap: wrap;
-}
-
-.AirlineCard-logo {
-  height: 32px;
-}
+} */
