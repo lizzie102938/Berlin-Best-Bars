@@ -1,12 +1,12 @@
 import './App.css';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import CardCollection from './components/CardCollection';
 import Navbar from './components/Navbar';
 import Filter from './components/Filter';
 // import { data } from './Data';
 
-
-function App() {
+class App extends Component {
+  render() {
 
   // const generateAlliancesForFilter = () => {
   //   return [...new Set(data.map((airline) => airline.alliance))]
@@ -22,8 +22,9 @@ function App() {
         </div>
     </div>
   );
+  }
 }
 
 export default App;
 
-{/* <Filter alliances={generateAlliancesForFilter()}/> */}
+/* <Filter alliances={generateAlliancesForFilter()}/> */
