@@ -9,7 +9,7 @@ class AirlineCard extends Component {
       <div className="AirlineCard">
         <div className='AirlineCard-logo-name-extra'>
           <img className="AirlineCard-logo" src={this.props.logoURL} alt={this.props.name}/>
-          <div className='AirlineCard-name-extra'>
+          <div data-testid="AirlineCard-ID" className='AirlineCard-name-extra'>
             <h3 className='AirlineCard-name'>{this.props.name}</h3>
             <div className="AirlineCard-extra">
               <div>

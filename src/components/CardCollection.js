@@ -3,7 +3,7 @@ import "../Styles/CardCollection.scss"
 
 export default function CardCollection(props) {
   console.log(props);
-    let mockData = {
+    let data = {
       airlines: [
       { site: "AA.com",
         alliance: "Oneworld",
@@ -93,8 +93,8 @@ export default function CardCollection(props) {
     <div className="CardCollection">
       <div className="CardCollection-cards">
 
-        {props.conditionProps.first && props.conditionProps.second && props.conditionProps.third
-          ? mockData.airlines.map((a) => (
+        {props.conditionProps.oneworld && props.conditionProps.skyteam && props.conditionProps.staralliance
+          ? data.airlines.map((a) => (
               <AirlineCard
                 name={a.name}
                 logoURL={a.logoURL}
@@ -104,8 +104,8 @@ export default function CardCollection(props) {
               />
             ))  : ''}
 
-        {!props.conditionProps.first && !props.conditionProps.second && !props.conditionProps.third
-          ? mockData.airlines.map((a) => (
+        {!props.conditionProps.oneworld && !props.conditionProps.skyteam && !props.conditionProps.staralliance
+          ? data.airlines.map((a) => (
               <AirlineCard
                 name={a.name}
                 logoURL={a.logoURL}
@@ -115,8 +115,8 @@ export default function CardCollection(props) {
               />
             ))  : ''}
 
-        {props.conditionProps.first && !props.conditionProps.second && !props.conditionProps.third
-          ? mockData.airlines.map((a) =>
+        {props.conditionProps.oneworld && !props.conditionProps.skyteam && !props.conditionProps.staralliance
+          ? data.airlines.map((a) =>
               a.alliance === 'Oneworld' ? (
                 <AirlineCard
                   name={a.name}
@@ -128,8 +128,8 @@ export default function CardCollection(props) {
               ) : ('')
             ) : ''}
 
-        {!props.conditionProps.first && props.conditionProps.second && !props.conditionProps.third
-          ? mockData.airlines.map((a) =>
+        {!props.conditionProps.oneworld && props.conditionProps.skyteam && !props.conditionProps.staralliance
+          ? data.airlines.map((a) =>
               a.alliance === 'Sky Team' ? (
                 <AirlineCard
                   name={a.name}
@@ -141,8 +141,8 @@ export default function CardCollection(props) {
               ) : ('')
             )  : ''}
 
-        {!props.conditionProps.first && !props.conditionProps.second && props.conditionProps.third
-          ? mockData.airlines.map((a) =>
+        {!props.conditionProps.oneworld && !props.conditionProps.skyteam && props.conditionProps.staralliance
+          ? data.airlines.map((a) =>
               a.alliance === 'Star Alliance' ? (
                 <AirlineCard
                   name={a.name}
@@ -154,8 +154,8 @@ export default function CardCollection(props) {
               ) : ('')
             )  : ''}
 
-        {props.conditionProps.first && props.conditionProps.second && !props.conditionProps.third
-          ? mockData.airlines.map((a) =>
+        {props.conditionProps.oneworld && props.conditionProps.skyteam && !props.conditionProps.staralliance
+          ? data.airlines.map((a) =>
               a.alliance === 'Oneworld' || a.alliance ==='Sky Team' ? (
                 <AirlineCard
                   name={a.name}
@@ -167,9 +167,22 @@ export default function CardCollection(props) {
               ) : ('')
             )  : ''}
 
-        {!props.conditionProps.first && props.conditionProps.second && props.conditionProps.third
-          ? mockData.airlines.map((a) =>
+        {!props.conditionProps.oneworld && props.conditionProps.skyteam && props.conditionProps.staralliance
+          ? data.airlines.map((a) =>
               a.alliance === 'Sky Team' || a.alliance === 'Star Alliance' ? (
+                <AirlineCard
+                  name={a.name}
+                  logoURL={a.logoURL}
+                  site={a.site}
+                  alliance={a.alliance}
+                  phone={a.phone}
+                />
+              ) : ('')
+            )  : ''}
+
+        {props.conditionProps.oneworld && !props.conditionProps.skyteam && props.conditionProps.staralliance
+          ? data.airlines.map((a) =>
+              a.alliance === 'Oneworld' || a.alliance === 'Star Alliance' ? (
                 <AirlineCard
                   name={a.name}
                   logoURL={a.logoURL}

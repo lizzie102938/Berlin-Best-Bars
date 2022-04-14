@@ -3,23 +3,23 @@ import CardCollection from './CardCollection';
 import '../Styles/Filter.scss';
 
 export default function Filter() {
-  const [firstIsChecked, setFirstIsChecked] = useState(false);
-  const [secondIsChecked, setSecondIsChecked] = useState(false);
-  const [thirdIsChecked, setThirdIsChecked] = useState(false);
+  const [oneworldIsChecked, setOneworldIsChecked] = useState(false);
+  const [skyteamIsChecked, setSkyteamIsChecked] = useState(false);
+  const [starallianceIsChecked, setStarallianceIsChecked] = useState(false);
 
   const handleOnFirstChange = () => {
-    setFirstIsChecked(!firstIsChecked);
+    setOneworldIsChecked(!oneworldIsChecked);
   };
 
   const handleOnSecondChange = () => {
-    setSecondIsChecked(!secondIsChecked);
+    setSkyteamIsChecked(!skyteamIsChecked);
   };
 
   const handleOnThirdChange = () => {
-    setThirdIsChecked(!thirdIsChecked);
+    setStarallianceIsChecked(!starallianceIsChecked);
   };
 
-  let condition = { first: firstIsChecked, second: secondIsChecked, third: thirdIsChecked };
+  let condition = { oneworld: oneworldIsChecked, skyteam: skyteamIsChecked, staralliance: starallianceIsChecked };
 
   return (
     <div>
@@ -28,19 +28,19 @@ export default function Filter() {
         <div className="Filter-oneworld">
           <input
             type="checkbox"
-            id=""
-            value="first"
-            checked={firstIsChecked}
+            value="oneworldcheck"
+            for="oneworldselect"
+            checked={oneworldIsChecked}
             onChange={handleOnFirstChange}
           />
           <label>Oneworld</label>
         </div>
-        <div className="Filter-skyteam">
+        <div data-testid="Skyteam-ID" className="Filter-skyteam">
           <input
             type="checkbox"
-            id=""
-            value="second"
-            checked={secondIsChecked}
+            value="skyteamcheck"
+            for="skyteamselect"
+            checked={skyteamIsChecked}
             onChange={handleOnSecondChange}
           />
           <label>Sky Team</label>
@@ -48,9 +48,9 @@ export default function Filter() {
         <div className="Filter-staralliance">
           <input
             type="checkbox"
-            id=""
-            value="third"
-            checked={thirdIsChecked}
+            value="staralliancecheck"
+            for="starallianceselect"
+            checked={starallianceIsChecked}
             onChange={handleOnThirdChange}
           />
           <label>Star Alliance</label>

@@ -7,7 +7,7 @@
 .AirlineCard-logo-name-extra {
   justify-content: center;
   display: flex;
-  width: 60%;
+  width: 80%;
   align-items: center;
 }
 
@@ -49,7 +49,7 @@
 .AirlineCard:hover .AirlineCard-extra {
   display: block;
   flex-direction: column;
-  line-height: 0.4;
+  line-height: 10px;
 }
 
 .AirlineCard:hover {
