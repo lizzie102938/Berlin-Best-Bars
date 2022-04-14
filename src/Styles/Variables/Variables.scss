@@ -1,4 +1,5 @@
 // colors
+
 $black-font: #000000;
 $dark-font: #192024;
 $light-font: #5a6872;
@@ -7,6 +8,8 @@ $light-grey-background-color: #F9FAFB;
 // font
 
 $site-font: "HelveticaNeue";
+
+// mixins
 
 @mixin card {
   border-radius: 8px;

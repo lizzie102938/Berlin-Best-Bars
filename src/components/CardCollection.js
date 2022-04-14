@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import AirlineCard from './AirlineCard';
 import "../Styles/CardCollection.scss"
 
@@ -90,23 +89,9 @@ export default function CardCollection(props) {
     ]
   };
 
-//   render() {
-//     return (
-//       <div className="CardCollection">
-//         <div className="CardCollection-cards">
-//           {this.props.airlines.map((a) => (
-//             <AirlineCard name={a.name} logoURL={a.logoURL} site={a.site} alliance={a.alliance} phone={a.phone}/>
-//           ))}
-//         </div>
-//       </div>
-//     )
-//   }
-// }
-
   return (
     <div className="CardCollection">
       <div className="CardCollection-cards">
-        {/* {result} */}
 
         {props.conditionProps.first && props.conditionProps.second && props.conditionProps.third
           ? mockData.airlines.map((a) => (
@@ -117,8 +102,7 @@ export default function CardCollection(props) {
                 alliance={a.alliance}
                 phone={a.phone}
               />
-            ))
-          : ''}
+            ))  : ''}
 
         {!props.conditionProps.first && !props.conditionProps.second && !props.conditionProps.third
           ? mockData.airlines.map((a) => (
@@ -129,8 +113,7 @@ export default function CardCollection(props) {
                 alliance={a.alliance}
                 phone={a.phone}
               />
-            ))
-          : ''}
+            ))  : ''}
 
         {props.conditionProps.first && !props.conditionProps.second && !props.conditionProps.third
           ? mockData.airlines.map((a) =>
@@ -142,11 +125,8 @@ export default function CardCollection(props) {
                   alliance={a.alliance}
                   phone={a.phone}
                 />
-              ) : (
-                ''
-              )
-            )
-          : ''}
+              ) : ('')
+            ) : ''}
 
         {!props.conditionProps.first && props.conditionProps.second && !props.conditionProps.third
           ? mockData.airlines.map((a) =>
@@ -158,11 +138,8 @@ export default function CardCollection(props) {
                   alliance={a.alliance}
                   phone={a.phone}
                 />
-              ) : (
-                ''
-              )
-            )
-          : ''}
+              ) : ('')
+            )  : ''}
 
         {!props.conditionProps.first && !props.conditionProps.second && props.conditionProps.third
           ? mockData.airlines.map((a) =>
@@ -174,11 +151,8 @@ export default function CardCollection(props) {
                   alliance={a.alliance}
                   phone={a.phone}
                 />
-              ) : (
-                ''
-              )
-            )
-          : ''}
+              ) : ('')
+            )  : ''}
 
         {props.conditionProps.first && props.conditionProps.second && !props.conditionProps.third
           ? mockData.airlines.map((a) =>
@@ -190,11 +164,8 @@ export default function CardCollection(props) {
                   alliance={a.alliance}
                   phone={a.phone}
                 />
-              ) : (
-                ''
-              )
-            )
-          : ''}
+              ) : ('')
+            )  : ''}
 
         {!props.conditionProps.first && props.conditionProps.second && props.conditionProps.third
           ? mockData.airlines.map((a) =>
@@ -206,11 +177,8 @@ export default function CardCollection(props) {
                   alliance={a.alliance}
                   phone={a.phone}
                 />
-              ) : (
-                ''
-              )
-            )
-          : ''}
+              ) : ('')
+            )  : ''}
       </div>
     </div>
   );

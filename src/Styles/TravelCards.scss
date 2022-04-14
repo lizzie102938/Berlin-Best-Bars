@@ -39,10 +39,7 @@
 }
 
 .TravelCards-colombia:hover {
-  // border: 1px solid #363f45;
-  // box-sizing: border-box;
   @include travelCardHover;
-  // background-image: none;
 }
 
 .TravelCards-colombia:hover span {
@@ -51,9 +48,6 @@
 
 .TravelCards-colombia:hover {
   background-image: url(https://www.kayak.com/rimg/provider-logos/airlines/v/A0.png);
-  // background-repeat: no-repeat;
-  // background-size: 40px;
-  // background-position: center;
   @include travelCardLogoHover
 }
 
@@ -67,10 +61,7 @@
 }
 
 .TravelCards-dubai:hover {
-  // border: 1px solid #363f45;
-  // box-sizing: border-box;
   @include travelCardHover;
-  // background-image: none;
 }
 
 .TravelCards-dubai:hover span {
@@ -79,9 +70,6 @@
 
 .TravelCards-dubai:hover {
   background-image: url(https://kayak.com/rimg/provider-logos/airlines/v/EK.png);
-  // background-repeat: no-repeat;
-  // background-size: 40px;
-  // background-position: center;
   @include travelCardLogoHover
 }
 
@@ -96,9 +84,6 @@
 }
 
 .TravelCards-berlin:hover {
-  // border: 1px solid #363f45;
-  // box-sizing: border-box;
-  // background-image: none;
   @include travelCardHover;
 }
 
@@ -108,9 +93,6 @@
 
 .TravelCards-berlin:hover {
   background-image: url(https://kayak.com/rimg/provider-logos/airlines/v/LH.png);
-  // background-repeat: no-repeat;
-  // background-size: 40px;
-  // background-position: center;
   @include travelCardLogoHover;
 }
 
@@ -125,9 +107,6 @@
 }
 
 .TravelCards-newyork:hover {
-  // border: 1px solid #363f45;
-  // box-sizing: border-box;
-  // background-image: none;
   @include travelCardHover;
 }
 
@@ -137,8 +116,5 @@
 
 .TravelCards-newyork:hover {
   background-image: url(https://www.kayak.com/rimg/provider-logos/airlines/v/AA.png);
-  // background-repeat: no-repeat;
-  // background-size: 40px;
-  // background-position: center;
   @include travelCardLogoHover;
 }

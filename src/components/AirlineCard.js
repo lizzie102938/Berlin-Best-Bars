@@ -26,5 +26,4 @@ class AirlineCard extends Component {
   }
 }
 
-
 export default AirlineCard;
