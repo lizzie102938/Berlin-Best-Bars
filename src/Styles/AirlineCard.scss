@@ -1,0 +1,66 @@
+@import "./Variables/Variables.scss";
+
+.AirlineCard {
+  @include card;
+}
+
+.AirlineCard-logo-name-extra {
+  justify-content: center;
+  display: flex;
+  width: 75%;
+  align-items: center;
+}
+
+.AirlineCard-logo {
+  height: 32px;
+  padding-right: 18px;
+}
+
+.AirlineCard-name {
+  font-family: $site-font;
+  font-size: 16px;
+  font-weight: bold;
+  color: $dark-font;
+}
+
+.AirlineCard-alliance {
+  @include airlineCardInfo;
+}
+
+.AirlineCard-phone {
+  @include airlineCardInfo;
+}
+
+.AirlineCard-site {
+  font-family: $site-font;
+  font-size: 14px;
+  font-weight: normal;
+  color: $light-font;
+}
+
+.AirlineCard-logo-name-extra {
+  display: flex;
+}
+
+.AirlineCard-extra {
+  display: none;
+}
+
+.AirlineCard:hover .AirlineCard-extra {
+  display: block;
+  flex-direction: column;
+  line-height: 0.4;
+}
+
+// .AirlineCard:hover {
+//   border: 1px solid #363f45;
+//   box-sizing: border-box;
+// }
+
+.AirlineCard:hover {
+  @include airlineCardHover;
+}
+
+.AirlineCard:hover .AirlineCard-name {
+  font-size: 14px;
+}

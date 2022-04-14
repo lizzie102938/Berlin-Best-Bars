@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
 import AirlineCard from './AirlineCard';
-import "./CardCollection.css"
-// import axios from "axios";
-// const API_URL = "https://kayak.com/h/mobileapis/directory/airlines/homework"
+import "../Styles/CardCollection.scss"
 
-// I chose to extract data manually from the API as there were only 12 examples
-// and on this occasion it seemed more efficient. For a larger extraction of data
-// I would have used Axios.
-// const generateAlliancesForFilter = () => {
-//   return [...new Set(data.map((a) => a.alliance))]
-// }
-
-class CardCollection extends Component {
-  static defaultProps = {
-    airlines : [
+export default function CardCollection(props) {
+  console.log(props);
+    let mockData = {
+      airlines: [
       { site: "AA.com",
         alliance: "Oneworld",
         phone: "+1 800 433 7300",
@@ -98,17 +90,128 @@ class CardCollection extends Component {
     ]
   };
 
-  render() {
-    return (
-      <div className="CardCollection">
-        <div className="CardCollection-cards">
-          {this.props.airlines.map((a) => (
-            <AirlineCard name={a.name} logoURL={a.logoURL} site={a.site} alliance={a.alliance} phone={a.phone}/>
-          ))}
-        </div>
-      </div>
-    )
-  }
-}
+//   render() {
+//     return (
+//       <div className="CardCollection">
+//         <div className="CardCollection-cards">
+//           {this.props.airlines.map((a) => (
+//             <AirlineCard name={a.name} logoURL={a.logoURL} site={a.site} alliance={a.alliance} phone={a.phone}/>
+//           ))}
+//         </div>
+//       </div>
+//     )
+//   }
+// }
 
-export default CardCollection;
+  return (
+    <div className="CardCollection">
+      <div className="CardCollection-cards">
+        {/* {result} */}
+
+        {props.conditionProps.first && props.conditionProps.second && props.conditionProps.third
+          ? mockData.airlines.map((a) => (
+              <AirlineCard
+                name={a.name}
+                logoURL={a.logoURL}
+                site={a.site}
+                alliance={a.alliance}
+                phone={a.phone}
+              />
+            ))
+          : ''}
+
+        {!props.conditionProps.first && !props.conditionProps.second && !props.conditionProps.third
+          ? mockData.airlines.map((a) => (
+              <AirlineCard
+                name={a.name}
+                logoURL={a.logoURL}
+                site={a.site}
+                alliance={a.alliance}
+                phone={a.phone}
+              />
+            ))
+          : ''}
+
+        {props.conditionProps.first && !props.conditionProps.second && !props.conditionProps.third
+          ? mockData.airlines.map((a) =>
+              a.alliance === 'Oneworld' ? (
+                <AirlineCard
+                  name={a.name}
+                  logoURL={a.logoURL}
+                  site={a.site}
+                  alliance={a.alliance}
+                  phone={a.phone}
+                />
+              ) : (
+                ''
+              )
+            )
+          : ''}
+
+        {!props.conditionProps.first && props.conditionProps.second && !props.conditionProps.third
+          ? mockData.airlines.map((a) =>
+              a.alliance === 'Sky Team' ? (
+                <AirlineCard
+                  name={a.name}
+                  logoURL={a.logoURL}
+                  site={a.site}
+                  alliance={a.alliance}
+                  phone={a.phone}
+                />
+              ) : (
+                ''
+              )
+            )
+          : ''}
+
+        {!props.conditionProps.first && !props.conditionProps.second && props.conditionProps.third
+          ? mockData.airlines.map((a) =>
+              a.alliance === 'Star Alliance' ? (
+                <AirlineCard
+                  name={a.name}
+                  logoURL={a.logoURL}
+                  site={a.site}
+                  alliance={a.alliance}
+                  phone={a.phone}
+                />
+              ) : (
+                ''
+              )
+            )
+          : ''}
+
+        {props.conditionProps.first && props.conditionProps.second && !props.conditionProps.third
+          ? mockData.airlines.map((a) =>
+              a.alliance === 'Oneworld' || a.alliance ==='Sky Team' ? (
+                <AirlineCard
+                  name={a.name}
+                  logoURL={a.logoURL}
+                  site={a.site}
+                  alliance={a.alliance}
+                  phone={a.phone}
+                />
+              ) : (
+                ''
+              )
+            )
+          : ''}
+
+        {!props.conditionProps.first && props.conditionProps.second && props.conditionProps.third
+          ? mockData.airlines.map((a) =>
+              a.alliance === 'Sky Team' || a.alliance === 'Star Alliance' ? (
+                <AirlineCard
+                  name={a.name}
+                  logoURL={a.logoURL}
+                  site={a.site}
+                  alliance={a.alliance}
+                  phone={a.phone}
+                />
+              ) : (
+                ''
+              )
+            )
+          : ''}
+      </div>
+    </div>
+  );
+}

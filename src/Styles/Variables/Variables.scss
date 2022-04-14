@@ -1,0 +1,45 @@
+// colors
+$black-font: #000000;
+$dark-font: #192024;
+$light-font: #5a6872;
+$light-grey-background-color: #F9FAFB;
+
+// font
+
+$site-font: "HelveticaNeue";
+
+@mixin card {
+  border-radius: 8px;
+  box-shadow: 0 -1px 4px 0 rgba(25, 32, 36, 0.04), 0 3px 6px 0 rgba(25, 32, 36, 0.16);
+  gap: 16px;
+  width: 300px;
+  height: 240px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin airlineCardInfo {
+    font-family: $site-font;
+    font-size: 14px;
+    font-weight: normal;
+    color: $dark-font;
+}
+
+@mixin airlineCardHover {
+  border: 1px solid #363f45;
+  box-sizing: border-box;
+}
+
+@mixin travelCardHover {
+  border: 1px solid #363f45;
+  box-sizing: border-box;
+  background-image: none;
+}
+
+@mixin travelCardLogoHover {
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
+}

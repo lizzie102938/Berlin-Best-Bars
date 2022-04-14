@@ -1,16 +1,18 @@
+@import "./Variables/Variables.scss";
 
 .App-title {
   margin: 0;
   padding-top: 67px;
   padding-bottom: 73px;
+  font-family: $site-font;
+  color: $black-font;
 }
 
 .App {
-  background-color:#F9FAFB;
+  background-color: $light-grey-background-color;
 }
 
 .App-container {
   padding-left: 94px;
   padding-right: 94px;
-
 }

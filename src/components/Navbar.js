@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Navbar.css';
-import logo from '../assets/Kayak-logo.svg'
+import '../Styles/Navbar.scss';
+import logo from '../Images/Kayak-logo.svg'
 
 class Navbar extends Component {
   render() {

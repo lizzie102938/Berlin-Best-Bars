@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import './AirlineCard.css';
+import '../Styles/AirlineCard.scss';
 import './CardCollection';
 
 class AirlineCard extends Component {
   render() {
-
-    // const alliance = this.props.alliance;
 
     return (
       <div className="AirlineCard">

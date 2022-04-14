@@ -1,12 +1,12 @@
 import { Component } from "react";
-import './TravelCards.css';
+import '../Styles/TravelCards.scss';
 
 class TravelCards extends Component {
   render() {
     return(
       <div className="TravelCards">
         <div className="TravelCards-text">
-          <h4>Our top destinations to fly with these airlines:</h4>
+          <h4>These airlines fly to some of our top destinations...</h4>
         </div>
         <div className="TravelCards-photocards">
           <h2 className="TravelCards-colombia TravelCards-name"><span>Colombia</span></h2>

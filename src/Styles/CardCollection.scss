@@ -1,5 +1,7 @@
+@import "./Variables/Variables.scss";
+
 .CardCollection {
-  background-color: #F9FAFB;
+  background-color: $light-grey-background-color;
   padding-bottom: 30px;
 }
 
