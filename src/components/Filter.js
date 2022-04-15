@@ -23,33 +23,33 @@ export default function Filter() {
 
   return (
     <div>
-      <h3 className="Filter-title">Filter by Alliances</h3>
-      <div className="Filter-options">
-        <div className="Filter-oneworld">
+      <h3 className='Filter-title'>Filter by Alliances</h3>
+      <div className='Filter-options'>
+        <div className='Filter-oneworld'>
           <input
-            type="checkbox"
-            value="oneworldcheck"
-            for="oneworldselect"
+            type='checkbox'
+            value='oneworldcheck'
+            for='oneworldselect'
             checked={oneworldIsChecked}
             onChange={handleOnFirstChange}
           />
           <label>Oneworld</label>
         </div>
-        <div data-testid="Skyteam-ID" className="Filter-skyteam">
+        <div data-testid='Skyteam-ID' className='Filter-skyteam'>
           <input
-            type="checkbox"
-            value="skyteamcheck"
-            for="skyteamselect"
+            type='checkbox'
+            value='skyteamcheck'
+            for='skyteamselect'
             checked={skyteamIsChecked}
             onChange={handleOnSecondChange}
           />
           <label>Sky Team</label>
         </div>
-        <div className="Filter-staralliance">
+        <div className='Filter-staralliance'>
           <input
-            type="checkbox"
-            value="staralliancecheck"
-            for="starallianceselect"
+            type='checkbox'
+            value='staralliancecheck'
+            for='starallianceselect'
             checked={starallianceIsChecked}
             onChange={handleOnThirdChange}
           />

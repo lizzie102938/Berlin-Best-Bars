@@ -6,17 +6,17 @@ class AirlineCard extends Component {
   render() {
 
     return (
-      <div className="AirlineCard">
+      <div className='AirlineCard'>
         <div className='AirlineCard-logo-name-extra'>
-          <img className="AirlineCard-logo" src={this.props.logoURL} alt={this.props.name}/>
-          <div data-testid="AirlineCard-ID" className='AirlineCard-name-extra'>
+          <img className='AirlineCard-logo' src={this.props.logoURL} alt={this.props.name}/>
+          <div data-testid='AirlineCard-ID' className='AirlineCard-name-extra'>
             <h3 className='AirlineCard-name'>{this.props.name}</h3>
-            <div className="AirlineCard-extra">
+            <div className='AirlineCard-extra'>
               <div>
-                <p className="AirlineCard-extra AirlineCard-alliance">{this.props.alliance}</p>
+                <p className='AirlineCard-extra AirlineCard-alliance'>{this.props.alliance}</p>
               </div>
-                <p className="AirlineCard-extra AirlineCard-phone">{this.props.phone}</p>
-                <p className="AirlineCard-extra AirlineCard-site">{this.props.site}</p>
+                <p className='AirlineCard-extra AirlineCard-phone'>{this.props.phone}</p>
+                <p className='AirlineCard-extra AirlineCard-site'>{this.props.site}</p>
             </div>
           </div>
         </div>
