@@ -21,4 +21,4 @@ The Alliance filter select the list of Airlines to only show those matching the 
 
 ## Testing
 
-Some tests have been implemented using React Testing Library. Please note that these are not in full working order, but have been left in the project to demonstrate my understanding of the importance of testing. Tests would run using 'yarn test'.
+Some tests have been implemented using React Testing Library. Please note that these are not in full working order, but have been left in the project to demonstrate understanding of the importance of testing. Tests would run using 'yarn test'.
