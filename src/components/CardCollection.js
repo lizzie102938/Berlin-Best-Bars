@@ -1,5 +1,5 @@
 import AirlineCard from './AirlineCard';
-import "../Styles/CardCollection.scss"
+import '../Styles/CardCollection.scss';
 
 export default function CardCollection(props) {
   console.log(props);
@@ -90,8 +90,8 @@ export default function CardCollection(props) {
   };
 
   return (
-    <div className="CardCollection">
-      <div className="CardCollection-cards">
+    <div className='CardCollection'>
+      <div className='CardCollection-cards'>
 
         {props.conditionProps.oneworld && props.conditionProps.skyteam && props.conditionProps.staralliance
           ? data.airlines.map((a) => (
