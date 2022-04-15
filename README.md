@@ -21,4 +21,12 @@ The Alliance filter select the list of Airlines to only show those matching the 
 
 ## Testing
 
-Some tests have been implemented using React Testing Library. Please note that these are not in full working order, but have been left in the project to demonstrate understanding of the importance of testing. Tests would run using 'yarn test'.
+Some tests have been implemented using React Testing Library. These are commented out as they are not perfect, but they have been left in the project to demonstrate understanding of the importance of testing. Tests would run using 'yarn test'.
+
+## API
+
+I chose to import the data manually from the API manually as there were not too many data examples needed. With more time, and in a larger application, I would have ensured this was fetched from the API.
+
+## Filter component
+
+I have developed a working filter for the Alliances, but am aware this could be refactored with more time. Ideally the number of checkboxes, and names of the checkboxes, would have been drawn from the data so that if the number of alliances increased, more code would not have to be added manually.
