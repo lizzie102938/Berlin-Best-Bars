@@ -1,14 +1,14 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import Filter from "./Components/Filter";
 
-// test attempt - commented out as not perfect
 
-// test('Sky Team filter shows only one airline when only filter selected', () => {
+
+// test('Medium filter shows correct number of venues when only filter selected', () => {
 //   render(<Filter />);
 
-//   const checkbox = screen.getByLabelText('Sky Team');
-//   fireEvent.change(checkbox, { target: { for: 'skyteamselect' } })
+//   const checkbox = screen.getByLabelText('€€');
+//   fireEvent.change(checkbox, { target: { for: 'mediumselect' } })
 
-//   const findCards = () => screen.findByID('AirlineCard-ID');
-//   expect(findCards).toHaveLength(1);
+//   const findCards = () => screen.findByID('BarCard-ID');
+//   expect(findCards).toHaveLength(5);
 // });

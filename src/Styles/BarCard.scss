@@ -1,37 +1,37 @@
 @import "./Variables/Variables.scss";
 
-.AirlineCard {
+.BarCard {
   @include card;
 }
 
-.AirlineCard-logo-name-extra {
+.BarCard-logo-name-extra {
   justify-content: center;
   display: flex;
   width: 80%;
   align-items: center;
 }
 
-.AirlineCard-logo {
-  height: 32px;
+.BarCard-logo {
+  height: 38px;
   padding-right: 18px;
 }
 
-.AirlineCard-name {
+.BarCard-name {
   font-family: $site-font;
   font-size: 16px;
   font-weight: bold;
-  color: $dark-font;
+  color: black;
 }
 
-.AirlineCard-alliance {
-  @include airlineCardInfo;
+.BarCard-price {
+  @include barCardInfo;
 }
 
-.AirlineCard-phone {
-  @include airlineCardInfo;
+.BarCard-phone {
+  @include barCardInfo;
 }
 
-.AirlineCard-site {
+.BarCard-site {
   font-family: $site-font;
   font-size: 12px;
   font-weight: normal;
@@ -39,24 +39,24 @@
   line-height: 14px;
 }
 
-.AirlineCard-logo-name-extra {
+.BarCard-logo-name-extra {
   display: flex;
 }
 
-.AirlineCard-extra {
+.BarCard-extra {
   display: none;
 }
 
-.AirlineCard:hover .AirlineCard-extra {
+.BarCard:hover .BarCard-extra {
   display: block;
   flex-direction: column;
   line-height: 10px;
 }
 
-.AirlineCard:hover {
-  @include airlineCardHover;
+.BarCard:hover {
+  @include barCardHover;
 }
 
-.AirlineCard:hover .AirlineCard-name {
+.BarCard:hover .BarCard-name {
   font-size: 14px;
 }
