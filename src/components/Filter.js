@@ -3,57 +3,58 @@ import CardCollection from './CardCollection';
 import '../Styles/Filter.scss';
 
 export default function Filter() {
-  const [oneworldIsChecked, setOneworldIsChecked] = useState(false);
-  const [skyteamIsChecked, setSkyteamIsChecked] = useState(false);
-  const [starallianceIsChecked, setStarallianceIsChecked] = useState(false);
+  const [cheapIsChecked, setCheapIsChecked] = useState(false);
+  const [mediumIsChecked, setMediumIsChecked] = useState(false);
+  const [expIsChecked, setExpIsChecked] = useState(false);
 
   const handleOnFirstChange = () => {
-    setOneworldIsChecked(!oneworldIsChecked);
+    setCheapIsChecked(!cheapIsChecked);
   };
 
   const handleOnSecondChange = () => {
-    setSkyteamIsChecked(!skyteamIsChecked);
+    setMediumIsChecked(!mediumIsChecked);
   };
 
   const handleOnThirdChange = () => {
-    setStarallianceIsChecked(!starallianceIsChecked);
+    setExpIsChecked(!expIsChecked);
   };
 
-  let condition = { oneworld: oneworldIsChecked, skyteam: skyteamIsChecked, staralliance: starallianceIsChecked };
+  let condition = { cheap: cheapIsChecked, medium: mediumIsChecked, exp: expIsChecked };
 
   return (
     <div>
-      <h3 className='Filter-title'>Filter by Alliances</h3>
+      <p class="Site-blurb">Berlin is a place full of exciting venues to eat and drink. If you're passionate about finding new spots in town to meet friends or relax after a long week, then you've come to the right place!</p>
+      <h3 className='Filter-title'>Filter by Price</h3>
       <div className='Filter-options'>
-        <div className='Filter-oneworld'>
+        <div className='Filter-cheap'>
           <input
             type='checkbox'
-            value='oneworldcheck'
-            for='oneworldselect'
-            checked={oneworldIsChecked}
+            value='cheapcheck'
+            for='cheapselect'
+            checked={cheapIsChecked}
             onChange={handleOnFirstChange}
           />
-          <label>Oneworld</label>
+          <label>€</label>
         </div>
-        <div data-testid='Skyteam-ID' className='Filter-skyteam'>
+        <div data-testid='Medium-ID' className='Filter-medium'>
           <input
             type='checkbox'
-            value='skyteamcheck'
-            for='skyteamselect'
-            checked={skyteamIsChecked}
+            value='mediumcheck'
+            for='mediumselect'
+            checked={mediumIsChecked}
             onChange={handleOnSecondChange}
           />
-          <label>Sky Team</label>
+          <label>€€</label>
         </div>
-        <div className='Filter-staralliance'>
+        <div className='Filter-exp'>
           <input
             type='checkbox'
-            value='staralliancecheck'
-            for='starallianceselect'
-            checked={starallianceIsChecked}
+            value='expcheck'
+            for='expselect'
+            checked={expIsChecked}
             onChange={handleOnThirdChange}
           />
-          <label>Star Alliance</label>
+          <label>€€€</label>
         </div>
       </div>
       <div>

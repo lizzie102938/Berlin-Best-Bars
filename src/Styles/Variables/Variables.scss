@@ -3,11 +3,11 @@
 $black-font: #000000;
 $dark-font: #192024;
 $light-font: #5a6872;
-$light-grey-background-color: #F9FAFB;
+$light-grey-background-color: #f7f4f4;
 
 // font
 
-$site-font: "HelveticaNeue";
+$site-font: "Helvetica neue";
 
 // mixins
 
@@ -23,26 +23,22 @@ $site-font: "HelveticaNeue";
   justify-content: center;
 }
 
-@mixin airlineCardInfo {
+@mixin barCardInfo {
     font-family: $site-font;
     font-size: 14px;
     font-weight: normal;
     color: $dark-font;
 }
 
-@mixin airlineCardHover {
-  border: 1px solid #363f45;
+@mixin barCardHover {
+  // border: 1px solid #363f45;
   box-sizing: border-box;
+  background-color:#f4efef;
+  box-shadow: 0 -1px 4px 0 rgba(25, 32, 36, 0.1), 0 3px 6px 0 rgba(25, 32, 36, 0.40);
 }
 
-@mixin travelCardHover {
+@mixin recCardHover {
   border: 1px solid #363f45;
   box-sizing: border-box;
   background-image: none;
-}
-
-@mixin travelCardLogoHover {
-  background-repeat: no-repeat;
-  background-size: 40px;
-  background-position: center;
 }

@@ -3,13 +3,14 @@
 .App-title {
   margin: 0;
   padding-top: 67px;
-  padding-bottom: 73px;
+  padding-bottom: 10px;
   font-family: $site-font;
-  color: $black-font;
+  color: #C84B31;
 }
 
 .App {
   background-color: $light-grey-background-color;
+  padding-bottom: 80px;
 }
 
 .App-container {

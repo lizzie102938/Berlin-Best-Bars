@@ -1,13 +1,12 @@
 @import "./Variables/Variables.scss";
 
 .Navbar-logo {
-  height: 19px;
+  width: 160px;
+  color: white;
   padding-left: 16px;
-  padding-top: 19px;
-  padding-bottom: 19px;
 }
 
 .Navbar {
-  background-color: white;
+  background-color:#191919;
   border-bottom: solid 1.5px rgba(197, 199, 199, 0.5);
 }
