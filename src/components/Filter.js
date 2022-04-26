@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import CardCollection from './CardCollection';
-import '../Styles/Filter.scss';
+import '../styles/Filter.scss';
 
 export default function Filter() {
   const [cheapIsChecked, setCheapIsChecked] = useState(false);
