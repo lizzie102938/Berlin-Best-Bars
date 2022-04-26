@@ -1,4 +1,4 @@
-import './styles/App.scss';
+import './Styles/App.scss';
 import React, { Component } from 'react';
 import Navbar from './components/navbar';
 import Filter from './components/Filter';

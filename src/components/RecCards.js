@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import '../styles/RecCards.scss';
+import '../Styles/RecCards.scss';
 
 class RecCards extends Component {
   render() {
