@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/BarCard.scss';
+import '../Styles/BarCard.scss';
 import './CardCollection';
 
 class BarCard extends Component {
