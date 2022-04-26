@@ -4,6 +4,7 @@ $black-font: #000000;
 $dark-font: #192024;
 $light-font: #5a6872;
 $light-grey-background-color: #f7f4f4;
+$orange-detail: #C84B31;
 
 // font
 
@@ -33,7 +34,8 @@ $site-font: "Helvetica neue";
 @mixin barCardHover {
   // border: 1px solid #363f45;
   box-sizing: border-box;
-  background-color:#f4efef;
+  // background-color: $light-grey-background-color;
+  border: 1px solid $orange-detail;
   box-shadow: 0 -1px 4px 0 rgba(25, 32, 36, 0.1), 0 3px 6px 0 rgba(25, 32, 36, 0.40);
 }
 
