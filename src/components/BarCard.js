@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../Styles/BarCard.scss';
 import './CardCollection';
+import {Link} from 'react-scroll';
 
 class BarCard extends Component {
   render() {
@@ -21,7 +22,6 @@ class BarCard extends Component {
           </div>
         </div>
       </div>
-
     );
   }
 }

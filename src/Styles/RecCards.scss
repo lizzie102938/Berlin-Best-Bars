@@ -20,6 +20,10 @@
   line-height: normal;
 }
 
+.RecCards a {
+  text-decoration-color: $orange-detail;
+}
+
 .RecCards-text {
   font-family: $site-font;
   font-size: 16px;

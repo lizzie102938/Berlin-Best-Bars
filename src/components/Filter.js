@@ -23,7 +23,7 @@ export default function Filter() {
 
   return (
     <div>
-      <p class="Site-blurb">Berlin is a place full of exciting venues to eat and drink. If you're passionate about finding new spots in town to meet friends or relax after a long week, then you've come to the right place!</p>
+      <p class="Site-blurb">Berlin is a place full of exciting venues to eat and drink. If you're passionate about finding new spots in town to meet friends or relax after a long week, then you've come to the right place! Hover over the cards to see more information about our favourite venues.</p>
       <h3 className='Filter-title'>Filter by Price</h3>
       <div className='Filter-options'>
         <div className='Filter-cheap'>
