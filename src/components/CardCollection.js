@@ -1,5 +1,5 @@
 import BarCard from './BarCard';
-import '../Styles/CardCollection.scss';
+import '../styles/CardCollection.scss';
 
 export default function CardCollection(props) {
   console.log(props);
