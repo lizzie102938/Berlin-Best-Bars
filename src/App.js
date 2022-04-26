@@ -2,7 +2,7 @@ import './Styles/App.scss';
 import React, { Component } from 'react';
 import Navbar from './Components/Navbar';
 import Filter from './Components/Filter';
-import RecCards from './Components/RecCards'
+import RecCards from './Components/RecCards';
 
 class App extends Component {
   render() {
