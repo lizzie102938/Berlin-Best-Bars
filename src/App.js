@@ -1,6 +1,6 @@
 import './Styles/App.scss';
 import React, { Component } from 'react';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Filter from './components/Filter';
 import RecCards from './components/RecCards';
 
