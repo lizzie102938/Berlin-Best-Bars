@@ -8,7 +8,7 @@ $orange-detail: #C84B31;
 
 // font
 
-$site-font: "Helvetica neue";
+// $site-font: font-family: arial;
 
 // mixins
 
@@ -25,7 +25,7 @@ $site-font: "Helvetica neue";
 }
 
 @mixin barCardInfo {
-    font-family: $site-font;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: $dark-font;

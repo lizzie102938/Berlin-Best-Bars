@@ -9,7 +9,7 @@ class BarCard extends Component {
     return (
       <div className='BarCard'>
         <div className='BarCard-logo-name-extra'>
-          <img className='BarCard-logo' src={this.props.logoURL} alt={this.props.name}/>
+          <img className='BarCard-logo' src={this.props.logoURL} alt='bar logo'/>
           <div data-testid='BarCard-ID' className='BarCard-name-extra'>
             <h3 className='BarCard-name'>{this.props.name}</h3>
             <div className='BarCard-extra'>

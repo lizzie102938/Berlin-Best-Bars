@@ -1,7 +1,7 @@
 @import "./Variables/Variables.scss";
 
 .Filter-title {
-  font-family: $site-font;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: $dark-font;
@@ -10,7 +10,7 @@
 }
 
 .Site-blurb {
-  font-family: $site-font;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 
@@ -32,7 +32,7 @@ input[type=checkbox] {
 }
 
 label {
-  font-family: $site-font;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: normal;
   color: $dark-font;
