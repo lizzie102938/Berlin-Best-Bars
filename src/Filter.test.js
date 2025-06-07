@@ -1,7 +1,5 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import Filter from "./Components/Filter";
-
-
+import { render, screen, fireEvent } from '@testing-library/react';
+import Filter from './Components/Filter';
 
 // test('Medium filter shows correct number of venues when only filter selected', () => {
 //   render(<Filter />);
