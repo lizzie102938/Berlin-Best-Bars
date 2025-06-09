@@ -1,4 +1,4 @@
-@import "./Variables/Variables.scss";
+@import './Variables/Variables.scss';
 
 .BarCard {
   @include card;
@@ -17,7 +17,6 @@
 }
 
 .BarCard-name {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: black;
@@ -32,7 +31,6 @@
 }
 
 .BarCard-site {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: normal;
   color: $light-font;

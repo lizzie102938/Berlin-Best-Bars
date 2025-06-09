@@ -1,0 +1,119 @@
+@import './Variables/Variables.scss';
+
+.Inspiration {
+  margin-bottom: 80px;
+}
+
+// .Inspiration-photocards {
+//   display: flex;
+//   gap: 16px;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.Inspiration-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  line-height: normal;
+}
+
+.Inspiration a {
+  text-decoration-color: $hover-detail;
+}
+
+.Inspiration-text {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 23px;
+  margin: 0;
+}
+
+.Inspiration-1 {
+  @include card;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-das-hotel-bar-@ron.sela1_.jpg);
+  background-size: 400px;
+}
+
+.Inspiration-1:hover {
+  background-image: url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-das-hotel-bar-@ron.sela1_.jpg);
+  // @include recCardHover;
+}
+
+.Inspiration-1:hover span {
+  display: none;
+}
+
+.Inspiration-1:hover {
+  background-image: linear-gradient(none);
+}
+
+.Inspiration-2 {
+  @include card;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-klunkerkranich-@nibor.p.jpg);
+  background-size: 500px;
+}
+
+.Inspiration-2:hover {
+  @include recCardHover;
+}
+
+.Inspiration-2:hover span {
+  display: none;
+}
+
+.Inspiration-2:hover {
+  background-image: url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-klunkerkranich-@nibor.p.jpg);
+}
+
+.Inspiration-3 {
+  @include card;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-Berlin-Ora-@backfill_official.jpg);
+  background-size: 500px;
+  background-position: center;
+}
+
+.Inspiration-3:hover {
+  @include recCardHover;
+}
+
+.Inspiration-3:hover span {
+  display: none;
+}
+
+.Inspiration-3:hover {
+  background-image: url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-Berlin-Ora-@backfill_official.jpg);
+}
+
+.Inspiration-4 {
+  @include card;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-bierhof-ruedersdorf-@__julita__.jpg);
+  background-size: 400px;
+  position: bottom;
+}
+
+.Inspiration-4:hover {
+  @include recCardHover;
+}
+
+.Inspiration-4:hover span {
+  display: none;
+}
+
+.Inspiration-4:hover {
+  background-image: url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-bierhof-ruedersdorf-@__julita__.jpg);
+}
+
+.Random-select-flex {
+  display: flex;
+  gap: 50px;
+}
