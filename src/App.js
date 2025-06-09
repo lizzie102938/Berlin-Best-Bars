@@ -2,7 +2,7 @@ import './Styles/App.scss';
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import Filter from './components/Filter';
-import RecCards from './components/RecCards';
+import Inspiration from './components/Inspiration';
 
 class App extends Component {
   render() {
@@ -10,9 +10,8 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <div className="App-container">
-          <h1 className="App-title">Bars</h1>
           <Filter />
-          <RecCards />
+          <Inspiration />
         </div>
       </div>
     );
