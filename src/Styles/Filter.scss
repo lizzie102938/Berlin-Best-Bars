@@ -1,25 +1,28 @@
 @import './Variables/Variables.scss';
 
 .Blurb-container {
-  background-color: $light-background-color;
+  // background-color: $light-background-color;
+  background-color: $light-blue;
   padding: 16px;
-  margin-bottom: 24px;
 }
 
 .Filter-title {
+  padding: 16px;
   font-size: 16px;
   font-weight: bold;
   // color: $dark-font;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   margin: 0;
 }
 
 .Site-blurb {
   font-size: 18px;
   margin-bottom: 0;
+  padding-top: 40px;
 }
 
 .Filter-options {
+  padding: 16px;
   display: flex;
   padding-bottom: 56px;
 }

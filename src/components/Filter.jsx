@@ -28,7 +28,6 @@ export default function Filter() {
   return (
     <div>
       <div className="Blurb-container">
-        <h1 className="App-title">Bars</h1>
         <p class="Site-blurb">
           Berlin is a place full of exciting venues to eat and drink. If you're
           passionate about finding new spots in town to meet friends or relax
