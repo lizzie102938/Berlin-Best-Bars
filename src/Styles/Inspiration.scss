@@ -1,119 +1,109 @@
-@import './Variables/Variables.scss';
+@import './variables/variables.scss';
 
-.Inspiration {
-  margin-bottom: 80px;
+.random-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 50vh;
+  color: #ccd6f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
-// .Inspiration-photocards {
-//   display: flex;
-//   gap: 16px;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   align-items: center;
-// }
+.random-bar-button {
+  background-color: $hot-pink;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 15px rgba(236, 72, 153, 0.3);
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+  width: 280px;
+  max-width: 90vw;
+}
 
-.Inspiration-name {
+.random-bar-button:hover {
+  background-color: $lighter-pink;
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(219, 39, 119, 0.6);
+}
+
+.random-bar-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #f9a8d4; /* pink-300 ring */
+}
+
+.bar-info {
+  max-width: 350px;
+  background: $dark-blue;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  min-width: 40vw;
+  text-align: center;
+}
+
+.bar-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  margin-top: 0 !important;
+  color: #ff79c6;
+}
+
+.bar-address {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #8892b0;
+  line-height: 1.4;
+}
+
+.bar-url a {
+  color: #50fa7b;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.bar-url a:hover {
+  color: #8be9fd;
+}
+
+.bar-image {
+  width: 100%;
+  max-width: 300px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(236, 72, 153, 0.3);
+  margin-top: 1rem;
+}
+
+.inspiration-name {
   font-size: 22px;
   font-weight: bold;
   color: white;
   line-height: normal;
 }
 
-.Inspiration a {
-  text-decoration-color: $hover-detail;
+.inspiration a {
+  text-decoration-color: $hot-pink;
 }
 
-.Inspiration-text {
+.inspiration-text {
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 23px;
   margin: 0;
 }
 
-.Inspiration-1 {
-  @include card;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-das-hotel-bar-@ron.sela1_.jpg);
-  background-size: 400px;
-}
-
-.Inspiration-1:hover {
-  background-image: url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-das-hotel-bar-@ron.sela1_.jpg);
-  // @include recCardHover;
-}
-
-.Inspiration-1:hover span {
-  display: none;
-}
-
-.Inspiration-1:hover {
-  background-image: linear-gradient(none);
-}
-
-.Inspiration-2 {
-  @include card;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-klunkerkranich-@nibor.p.jpg);
-  background-size: 500px;
-}
-
-.Inspiration-2:hover {
-  @include recCardHover;
-}
-
-.Inspiration-2:hover span {
-  display: none;
-}
-
-.Inspiration-2:hover {
-  background-image: url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-klunkerkranich-@nibor.p.jpg);
-}
-
-.Inspiration-3 {
-  @include card;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-Berlin-Ora-@backfill_official.jpg);
-  background-size: 500px;
-  background-position: center;
-}
-
-.Inspiration-3:hover {
-  @include recCardHover;
-}
-
-.Inspiration-3:hover span {
-  display: none;
-}
-
-.Inspiration-3:hover {
-  background-image: url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-Berlin-Ora-@backfill_official.jpg);
-}
-
-.Inspiration-4 {
-  @include card;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-bierhof-ruedersdorf-@__julita__.jpg);
-  background-size: 400px;
-  position: bottom;
-}
-
-.Inspiration-4:hover {
-  @include recCardHover;
-}
-
-.Inspiration-4:hover span {
-  display: none;
-}
-
-.Inspiration-4:hover {
-  background-image: url(https://marylineg1.sg-host.com/blog/wp-content/uploads/2017/06/best-bars-in-berlin-bierhof-ruedersdorf-@__julita__.jpg);
-}
-
-.Random-select-flex {
+.random-select-flex {
+  justify-content: center;
   display: flex;
   gap: 50px;
+  padding-top: 35px;
 }

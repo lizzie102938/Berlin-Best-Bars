@@ -1,33 +1,31 @@
 @import './Variables/Variables.scss';
 
-.Blurb-container {
-  // background-color: $light-background-color;
+.blurb-container {
   background-color: $light-blue;
   padding: 16px;
 }
 
-.Filter-title {
+.filter-title {
   padding: 16px;
   font-size: 16px;
   font-weight: bold;
-  // color: $dark-font;
   padding-bottom: 24px;
   margin: 0;
 }
 
-.Site-blurb {
+.site-blurb {
   font-size: 18px;
   margin-bottom: 0;
   padding-top: 40px;
 }
 
-.Filter-options {
+.filter-options {
   padding: 16px;
   display: flex;
   padding-bottom: 56px;
 }
 
-.Filter-checkbox {
+.filter-checkbox {
   padding-right: 2px;
 }
 
@@ -42,7 +40,6 @@ input[type='checkbox'] {
 label {
   font-size: 14px;
   font-weight: normal;
-  // color: $dark-font;
   word-wrap: none;
   margin: 0;
   padding-right: 24px;

@@ -5,8 +5,9 @@ import logo from '../Images/BBBlogo.png';
 class Navbar extends Component {
   render() {
     return (
-      <nav className="Navbar">
-        <img className="Navbar-logo" src={logo} alt="BBB-logo" />
+      <nav className="navbar">
+        <img className="navbar-logo" src={logo} alt="BBB-logo" />
+        <button className="recommendation-button">Our recommendations</button>
       </nav>
     );
   }

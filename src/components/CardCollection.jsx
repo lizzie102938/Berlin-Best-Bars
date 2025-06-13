@@ -16,8 +16,8 @@ export default function CardCollection({ conditionProps }) {
   const filteredBars = data.bars.filter((bar) => selectedPrices.has(bar.price));
 
   return (
-    <div className="CardCollection">
-      <div className="CardCollection-cards">
+    <div className="card-collection">
+      <div className="card-collection-cards">
         {filteredBars.map((bar) => (
           <BarCard
             key={bar.name}

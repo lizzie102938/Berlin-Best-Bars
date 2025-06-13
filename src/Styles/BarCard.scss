@@ -1,60 +1,60 @@
 @import './Variables/Variables.scss';
 
-.BarCard {
+.bar-card {
   @include card;
 }
 
-.BarCard-logo-name-extra {
+.bar-card-logo-name-extra {
   justify-content: center;
   display: flex;
   width: 80%;
   align-items: center;
 }
 
-.BarCard-logo {
+.bar-card-logo {
   height: 38px;
   padding-right: 18px;
 }
 
-.BarCard-name {
+.bar-card-name {
   font-size: 16px;
   font-weight: bold;
   color: black;
 }
 
-.BarCard-price {
-  @include barCardInfo;
+.bar-card-price {
+  @include bar-card-info;
 }
 
-.BarCard-phone {
-  @include barCardInfo;
+.bar-card-phone {
+  @include bar-card-info;
 }
 
-.BarCard-site {
+.bar-card-site {
   font-size: 12px;
   font-weight: normal;
   color: $light-font;
   line-height: 14px;
 }
 
-.BarCard-logo-name-extra {
+.bar-card-logo-name-extra {
   display: flex;
 }
 
-.BarCard-extra {
+.bar-card-extra {
   display: none;
 }
 
-.BarCard:hover .BarCard-extra {
+.bar-card:hover .bar-card-extra {
   display: block;
   flex-direction: column;
   line-height: 10px;
 }
 
-.BarCard:hover {
-  @include barCardHover;
+.bar-card:hover {
+  @include bar-card-hover;
 }
 
-.BarCard:hover .BarCard-name {
+.bar-card:hover .bar-card-name {
   font-size: 14px;
 }

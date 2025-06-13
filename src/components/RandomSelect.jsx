@@ -18,18 +18,25 @@ export default function RandomSelect() {
   };
 
   return (
-    <div className="text-center p-4">
-      <button
-        onClick={fetchBar}
-        className="rounded bg-pink-600 px-4 py-2 text-white hover:bg-pink-700"
-      >
-        {loading ? 'Finding bar...' : 'Find a Random Bar in Berlin'}
+    <div className="random-bar-container">
+      <button onClick={fetchBar} className="random-bar-button">
+        {loading ? 'Finding bar...' : 'Find a random bar in Berlin'}
       </button>
 
       {bar && (
-        <div className="mt-4">
-          <h2 className="text-xl font-bold">{bar.name}</h2>
-          <p>{bar.address}</p>
+        <div className="bar-info">
+          <h2 className="bar-name">{bar.name}</h2>
+          <p className="bar-address">{bar.address}</p>
+          {bar.url && (
+            <p className="bar-url">
+              <a href={bar.url} target="_blank" rel="noopener noreferrer">
+                Visit Website
+              </a>
+            </p>
+          )}
+          {bar.image && (
+            <img src={bar.image} alt={bar.name} className="bar-image" />
+          )}
         </div>
       )}
     </div>

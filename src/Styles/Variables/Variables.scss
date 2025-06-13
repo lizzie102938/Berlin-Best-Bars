@@ -1,15 +1,13 @@
-// colors
-
 $black-font: #000000;
 $dark-font: #192024;
 $light-font: #5a6872;
 $light-background-color: #ffffff;
-$hover-detail: #dbca36;
-$dark-blue: #0d0996;
+// $hover-detail: #dbca36;
+$dark-blue: #112240;
 $light-blue: #e8f2f7;
-// font
-// $site-font: font-family: arial;
-// mixins
+$lighter-pink: #db2777;
+$hot-pink: #ec4899;
+
 @mixin card {
   border-radius: 8px;
   box-shadow:
@@ -18,31 +16,23 @@ $light-blue: #e8f2f7;
   gap: 16px;
   width: 300px;
   height: 240px;
-  background-color: white;
+  background-color: $light-background-color;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@mixin barCardInfo {
+@mixin bar-card-info {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: normal;
   color: $dark-font;
 }
 
-@mixin barCardHover {
-  // border: 1px solid #363f45;
+@mixin bar-card-hover {
   box-sizing: border-box;
-  // background-color: $light-grey-background-color;
-  border: 1px solid $hover-detail;
+  border: 1px solid $hot-pink;
   box-shadow:
     0 -1px 4px 0 rgba(25, 32, 36, 0.1),
     0 3px 6px 0 rgba(25, 32, 36, 0.4);
-}
-
-@mixin recCardHover {
-  border: 1px solid #363f45;
-  box-sizing: border-box;
-  background-image: none;
 }

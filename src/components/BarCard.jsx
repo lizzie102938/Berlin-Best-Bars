@@ -6,19 +6,21 @@ import './CardCollection';
 class BarCard extends Component {
   render() {
     return (
-      <div className="BarCard">
-        <div className="BarCard-logo-name-extra">
-          <img className="BarCard-logo" src={this.props.logo} alt="bar-logo" />
-          <div data-testid="BarCard-ID" className="BarCard-name-extra">
-            <h3 className="BarCard-name">{this.props.name}</h3>
-            <div className="BarCard-extra">
+      <div className="bar-card">
+        <div className="bar-card-logo-name-extra">
+          <img className="bar-card-logo" src={this.props.logo} alt="bar-logo" />
+          <div data-testid="bar-card-ID" className="bar-card-name-extra">
+            <h3 className="bar-card-name">{this.props.name}</h3>
+            <div className="bar-card-extra">
               <div>
-                <p className="BarCard-extra BarCard-price">
+                <p className="bar-card-extra bar-card-price">
                   {this.props.price}
                 </p>
               </div>
-              <p className="BarCard-extra BarCard-phone">{this.props.phone}</p>
-              <p className="BarCard-extra BarCard-site">{this.props.site}</p>
+              <p className="bar-card-extra bar-card-phone">
+                {this.props.phone}
+              </p>
+              <p className="bar-card-extra bar-card-site">{this.props.site}</p>
             </div>
           </div>
         </div>
