@@ -1,0 +1,110 @@
+@import './variables/variables.scss';
+
+.random-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 50vh;
+  color: #ccd6f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.random-bar-button {
+  background-color: $hot-pink;
+  color: white;
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 15px rgba(236, 72, 153, 0.3);
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+  width: 280px;
+  max-width: 90vw;
+}
+
+.random-bar-button:hover {
+  background-color: $lighter-pink;
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(219, 39, 119, 0.6);
+}
+
+.random-bar-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #f9a8d4; /* pink-300 ring */
+}
+
+.bar-info {
+  max-width: 350px;
+  background: $dark-blue;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  min-width: 40vw;
+  text-align: center;
+}
+
+.bar-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  margin-top: 0 !important;
+  color: #ff79c6;
+}
+
+.bar-address {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #8892b0;
+  line-height: 1.4;
+}
+
+.bar-url a {
+  color: #50fa7b;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.bar-url a:hover {
+  color: #8be9fd;
+}
+
+.bar-image {
+  width: 100%;
+  max-width: 300px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(236, 72, 153, 0.3);
+  margin-top: 1rem;
+}
+
+.inspiration-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  line-height: normal;
+}
+
+.inspiration a {
+  text-decoration-color: $hot-pink;
+}
+
+.inspiration-text {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 23px;
+  margin: 0;
+}
+
+.random-select-flex {
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+  padding-top: 35px;
+}
